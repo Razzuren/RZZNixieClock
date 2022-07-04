@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layerType="hardware"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Nixies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002">
+
+        <ImageView
+            android:id="@+id/decHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:alpha="1"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageView
+            android:id="@+id/unitHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:alpha="1"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageView
+            android:id="@+id/decMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:alpha="1"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageView
+            android:id="@+id/unitMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/_1" />
+
+        <ImageView
+            android:id="@+id/decSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/_2" />
+
+        <ImageView
+            android:id="@+id/unitSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/_4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reflexesLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:alpha="0.4"
+        android:orientation="horizontal"
+        android:scaleY="-1"
+        app:layout_constraintEnd_toEndOf="@+id/Nixies"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Nixies"
+        app:layout_constraintTop_toBottomOf="@+id/Nixies">
+
+        <ImageView
+            android:id="@+id/R_decHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageView
+            android:id="@+id/R_unitHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageView
+            android:id="@+id/R_decMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageView
+            android:id="@+id/R_unitMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/_1" />
+
+        <ImageView
+            android:id="@+id/R_decSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/_2" />
+
+        <ImageView
+            android:id="@+id/R_unitSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/_4" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reflexesLayout"
+        app:layout_constraintEnd_toEndOf="@+id/Nixies"
+        app:layout_constraintStart_toStartOf="@+id/Nixies"
+        app:layout_constraintTop_toTopOf="@+id/Nixies"
+        app:srcCompat="@drawable/reflex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
